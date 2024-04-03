@@ -1,0 +1,17 @@
+.nav, .main, .sec {
+    border: 0;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main, .sec {
+    color: blue;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.side {
+    display: none;
+}
