@@ -44,6 +44,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 #active3 {
@@ -69,7 +70,7 @@ main, main h1, section, section h2 {
 
 .main, .sec {
     background-color: white;
-    border: 0;
+    color: black;
     text-decoration: underline;
     font-size: 15px;
 }
