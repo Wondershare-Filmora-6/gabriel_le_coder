@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "JTree",
+            "request": "launch",
+            "mainClass": "JTree",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Open Finals Lab Exercise 1.html",

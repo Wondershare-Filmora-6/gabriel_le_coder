@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambertron</title>
+    <link rel="shortcut icon" href="../MEDIA/IMG/Logo/AmbertronLogo.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec1 {
+            width: 95%;
+            height: 50%;
+            display: flex;
+        }
+
+        .scontent {
+            width: 100%;
+            height: 100%;
+        }
+
+        .stext {
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 500%;
+            margin-left: 5%;
+            margin-bottom: 1%;
+        }
+
+        .scarousel {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .cnav {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .simg {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+            position: relative;
+            z-index: -4;
+        }
+
+        .shadow1 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to top, rgba(80, 170, 255, 0.801), rgba(255, 255, 255, 0));
+            position: absolute;
+            top: 0;
+            z-index: -3;
+            display: none;
+        }
+
+        .shadow2 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to top, rgb(31, 31, 31), rgba(255, 255, 255, 0));
+            position: absolute;
+            top: 0;
+            z-index: -2;
+            display: none;
+        }
+
+        .shadow3 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to top, rgba(238, 52, 52, 0.801), rgba(255, 255, 255, 0));
+            position: absolute;
+            top: 0;
+            z-index: -2;
+            display: none;
+        }
+
+        .ctext {
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 500%;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            z-index: -2;
+            display: none;
+        }
+
+        .fade:hover {
+            .shadow1, .shadow2, .shadow3, .ctext {
+                display: block;
+            }
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            width: auto;
+            height: 96%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            z-index: 1;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 1% 0 0 0;
+            background-color: #bbb;
+            border-radius: 50%; 
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="top">
+        <header>
+            <div class="banner">
+                <img class="logo" src="../MEDIA/IMG/Logo/ATLogo.png" alt="Ambertron Logo">
+            </div>
+            <nav>
+                <a class="nav text" href="../index.html">Home</a>
+                <a class="nav text active" href="../HTML/Store.html">Store</a>
+                <a class="nav text" href="../HTML/Library.html">Library</a>
+                <a class="nav text" href="../HTML/About.html">About</a>
+                <a class="nav text" href="../HTML/Profile.html">Profile</a>
+            </nav>
+        </header>
+    </div>
+    
+    <main>
+        <section class="sec1">
+            <div class="scontent">
+                <p class="stext">Categories</p>
+                <div class="scarousel">
+                    <div class="Categories fade">
+                        <a class="cnav" href="#"></a>
+                        <img class="simg" src="../MEDIA/IMG/Store/Oga World.gif">
+                        <div class="shadow1"></div>
+                        <div class="ctext">Adventure</div>
+                    </div>
+                    <div class="Categories fade">
+                        <a class="cnav" href="#"></a>
+                        <img class="simg" src="../MEDIA/IMG/Store/Five Nights at My House.gif">
+                        <div class="shadow2"></div>
+                        <div class="ctext">Horror</div>
+                    </div>
+                    <div class="Categories fade">
+                        <a class="cnav" href="#"></a>
+                        <img class="simg" src="../MEDIA/IMG/Store/Taken 8.gif">
+                        <div class="shadow3"></div>
+                        <div class="ctext">Action</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </section>
+        
+        <section class="sec2">
+
+        </section>
+
+    </main>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("Categories");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+    <div>
+        <footer>
+            <div class="footer">
+                <div>
+                    <p class="footp">PHONE</p>
+                    <p class="footd">(123) 456-7890</p>
+                    <p class="footp">EMAIL</p>
+                    <p class="footd">AMBERTRON@gmail.com</p>
+                    <p class="footp">SOCIAL</p>
+                    <div class="socialIcons">
+                        <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <a href="#top" class="btn-f">Ʌ</a>
+            </div>
+            <div class="footerBottom">
+                <p>
+                    Copyright © 2024. All Rights Reserved. This is a genuine Ambertron site.
+                </p>            
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
