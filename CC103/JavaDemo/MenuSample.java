@@ -1,11 +1,12 @@
 import javax.swing.*;
 import java.awt.event.*;
+
 public class MenuSample implements ActionListener{
 
 	JTextArea textarea;
 	JMenuItem undo,cut,copy,paste,selectAll;
 	
-	MenuSample(){
+	MenuSample() {
 	
 	//JFrame - container of Swing Components
 	JFrame f = new JFrame("Menu Sample");
@@ -30,19 +31,29 @@ public class MenuSample implements ActionListener{
 	paste.addActionListener(this);
 	selectAll.addActionListener(this);
 	//adding JMenuItems to JMenu
-	edit.add(undo);edit.addSeparator();edit.add(cut);edit.addSeparator();edit.add(copy);
-	edit.addSeparator();edit.add(paste);edit.addSeparator();edit.add(selectAll);
+	edit.add(undo);
+	edit.addSeparator();
+	edit.add(cut);
+	edit.addSeparator();
+	edit.add(copy);
+	edit.addSeparator();
+	edit.add(paste);
+	edit.addSeparator();
+	edit.add(selectAll);
 	
 	//JTextArea
 	textarea = new JTextArea();
-	textarea.setBounds(5,5,380,380);f.add(textarea);
+	textarea.setBounds(5,5,380,380);
+	f.add(textarea);
 	
 	//adding submenu
 	JMenu insert = new JMenu("Insert");
 	edit.add(insert);
 	JMenuItem date = new JMenuItem("Date Time (short)");
 	JMenuItem time = new JMenuItem("Date Time (long)");
-	insert.add(date);insert.addSeparator();insert.add(time);
+	insert.add(date);
+	insert.addSeparator();
+	insert.add(time);
 	
 	f.setJMenuBar(menubar);//adding JMenuBar to JFrame
 	f.setSize(400,400);
@@ -50,10 +61,10 @@ public class MenuSample implements ActionListener{
 	f.setVisible(true);
 	
 	}public void actionPerformed(ActionEvent e){
+		// if(e.getSource()==undo)
+		// 	textarea.undo();
 		if(e.getSource()==cut)
 			textarea.cut();
-		if(e.getSource()==undo)
-			textarea.undo();
 		if(e.getSource()==copy)
 			textarea.copy();
 		if(e.getSource()==paste)

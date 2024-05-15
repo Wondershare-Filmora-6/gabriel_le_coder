@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MenuSample",
+            "request": "launch",
+            "mainClass": "CC103.Finals.MenuSample",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Finals",
+            "request": "launch",
+            "mainClass": "CC103.Finals.Finals",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "MenuSample",
+            "request": "launch",
+            "mainClass": "CC103.JavaDemo.MenuSample",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
             "name": "JTree",
             "request": "launch",
             "mainClass": "JTree",
