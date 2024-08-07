@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Act1",
+            "request": "launch",
+            "mainClass": "Act1",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Alpha",
+            "request": "launch",
+            "mainClass": "Alpha",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Act1",
+            "request": "launch",
+            "mainClass": "PF101.Act1",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
             "name": "MenuSample",
             "request": "launch",
             "mainClass": "CC103.Finals.MenuSample",
