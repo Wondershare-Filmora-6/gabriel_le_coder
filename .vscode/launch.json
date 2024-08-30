@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HandsonOne",
+            "request": "launch",
+            "mainClass": "HandsonOne",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Check",
+            "request": "launch",
+            "mainClass": "Check",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
             "name": "Act2",
             "request": "launch",
             "mainClass": "Act2",
