@@ -1,8 +1,11 @@
+//Code by Frederick Gabrielle Cunanan
 import java.util.Scanner;
 
 public class Trial1 {
     public static void main (String [] args) {
         try (Scanner input = new Scanner (System.in)) {
+
+            //Simple calculator using switch statement
             System.out.print("First Number: ");
             double n1 = input.nextInt();
             System.out.print("Operation (+,-,*,/): ");
@@ -11,6 +14,7 @@ public class Trial1 {
             double n2 = input.nextDouble();
             System.out.println("");
 
+            //Switch Statement
             switch (op) {
                 case '+':
                     double t = n1 + n2;

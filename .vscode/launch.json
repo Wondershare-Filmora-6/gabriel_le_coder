@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Act2",
+            "request": "launch",
+            "mainClass": "Act2",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Act1v2",
+            "request": "launch",
+            "mainClass": "Act1v2",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "CC103",
+            "request": "launch",
+            "mainClass": "CC103",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Voter",
+            "request": "launch",
+            "mainClass": "Voter",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
             "name": "Act1",
             "request": "launch",
             "mainClass": "Act1",
