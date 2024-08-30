@@ -2,14 +2,15 @@ import java.util.Scanner;
 
 public class Act2 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        try(Scanner input = new Scanner(System.in)) {
         
+        //Item constant prices
         final double fruits = 50.00;
         final double vegetables = 30.00;
         final double dairy = 70.00;
         
+        
         double totalCost = 0;
-        double eachItem = 0;
         double totalItem = 0;
         
         System.out.print("Enter the number of different item types in your cart: ");
@@ -22,6 +23,8 @@ public class Act2 {
             System.out.println("3. Dairy (PHP 70 per unit)");
             int itemType = input.nextInt();
             
+            double eachItem = 0;
+
             System.out.print("Enter the number of items: ");
             eachItem = input.nextInt();
 
@@ -48,7 +51,7 @@ public class Act2 {
 
         if (totalItem > 5) {
             totalCost = totalCost * 0.90;
-            System.out.println("You have " + totalItem + " in your cart. A 10% discount have been applied. Your total amount without VAT is: PHP " + totalCost);
+            System.out.println("You have " + totalItem + " items in your cart.\nA 10% discount have been applied.\nYour total amount without VAT is: PHP " + totalCost);
         }
         
         double vat = totalCost * 0.12;
@@ -62,5 +65,6 @@ public class Act2 {
         System.out.println("Your total cost for all items is: PHP " + totalCost);
         
         input.close();
+        }
     }
 }
