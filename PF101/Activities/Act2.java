@@ -28,25 +28,30 @@ public class Act2 {
             System.out.print("Enter the number of items: ");
             eachItem = input.nextInt();
 
-            double price = 0;
+            if (eachItem > 0) {
+                double price = 0;
             
-            if (itemType == 1) {
-                price = fruits;
-                System.out.println("You selected Fruits. Price: PHP 50 per kilo.");
-            } else if (itemType == 2) {
-                price = vegetables;
-                System.out.println("You selected Vegetables. Price: PHP 30 per kilo.");
-            } else if (itemType == 3) {
-                price = dairy;
-                System.out.println("You selected Dairy. Price: PHP 70 per unit.");
+                if (itemType == 1) {
+                    price = fruits;
+                    System.out.println("You selected Fruits. Price: PHP 50 per kilo.");
+                } else if (itemType == 2) {
+                    price = vegetables;
+                    System.out.println("You selected Vegetables. Price: PHP 30 per kilo.");
+                } else if (itemType == 3) {
+                    price = dairy;
+                    System.out.println("You selected Dairy. Price: PHP 70 per unit.");
+                } else {
+                    System.out.println("Invalid item type selected.");
+                    continue;
+                }
+                
+                double itemCost = eachItem * price;
+                totalCost += itemCost;
+                totalItem += eachItem;
             } else {
-                System.out.println("Invalid item type selected.");
-                continue;
+                System.out.println("Invalid number!");
             }
-            
-            double itemCost = eachItem * price;
-            totalCost += itemCost;
-            totalItem += eachItem;
+
         }
 
         if (totalItem > 5) {
