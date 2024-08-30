@@ -10,6 +10,7 @@ public class Act2 {
         
         double totalCost = 0;
         double eachItem = 0;
+        double totalItem = 0;
         
         System.out.print("Enter the number of different item types in your cart: ");
         int numItems = input.nextInt();
@@ -42,11 +43,12 @@ public class Act2 {
             
             double itemCost = eachItem * price;
             totalCost += itemCost;
+            totalItem += eachItem;
         }
-        
-        if (eachItem > 5) {
+
+        if (totalItem > 5) {
             totalCost = totalCost * 0.90;
-            System.out.println("You have " + eachItem + " in your cart. A 10% discount have been applied. Your total amount without VAT is: PHP " + totalCost);
+            System.out.println("You have " + totalItem + " in your cart. A 10% discount have been applied. Your total amount without VAT is: PHP " + totalCost);
         }
         
         double vat = totalCost * 0.12;
