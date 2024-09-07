@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConsoleTapGame",
+            "request": "launch",
+            "mainClass": "ConsoleTapGame",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
             "name": "HandsonOne",
             "request": "launch",
             "mainClass": "HandsonOne",
