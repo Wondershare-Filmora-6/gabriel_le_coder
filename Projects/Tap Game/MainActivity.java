@@ -58,5 +58,3 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-// activity_main.xml
-
