@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Average",
+            "request": "launch",
+            "mainClass": "Average",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Gab",
+            "request": "launch",
+            "mainClass": "Gab",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "problem",
+            "request": "launch",
+            "mainClass": "problem",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
             "name": "ConsoleTapGame",
             "request": "launch",
             "mainClass": "ConsoleTapGame",
