@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Quiz_Score_Average_Calculator",
+            "request": "launch",
+            "mainClass": "Quiz_Score_Average_Calculator",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Color_Mood_Program",
+            "request": "launch",
+            "mainClass": "Color_Mood_Program",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Assignment2",
+            "request": "launch",
+            "mainClass": "Assignment2",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Assignment1",
+            "request": "launch",
+            "mainClass": "Assignment1",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
+            "name": "Assignment",
+            "request": "launch",
+            "mainClass": "Assignment",
+            "projectName": "gabriel_le_coder_39215cf1"
+        },
+        {
+            "type": "java",
             "name": "Average",
             "request": "launch",
             "mainClass": "Average",
