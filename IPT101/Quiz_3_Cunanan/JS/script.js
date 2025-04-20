@@ -1,4 +1,4 @@
-const API_KEY = '3e398def588c26eccfdb9b0c03e8113a';
+const API_KEY = '3e398def588c26eccfdb9b0c03e8113a'; // Not recommended in an actual website.
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
